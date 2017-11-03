@@ -2,7 +2,7 @@
     <input pattern="(hi|hello) *">
         <!-- Greet the user if we know his/her name -->
         <output if="full($UserName)">
-            <item>Hello $UserName!</item>
+            <item>Hola $UserName!</item>
             <item>¡Que onda $UserName!</item>
             <item>ohhhh!!! tambien te llamas $UserName!</item>
         </output>
@@ -20,17 +20,21 @@
     </input>
     
     <input pattern="(hola) *">
-      <output value="Hola! Cúal es tu color favorito?"/>
-
-  <context>
-    <input pattern="* $Color"/>
-    <sample>
-      <item>Green</item>
-      <item>Blue</item>
-      <item>Red</item>
-    </sample>
-  </context>
-</input>
+      <context if="empty($Color)" modal="true">
+        <output value="Hola! Cúal es tu color favorito?"/>
+          
+         <sample>
+          <item>Green</item>
+          <item>Blue</item>
+          <item>Red</item>
+        </sample>
+        <input pattern="$Color"/>
+        <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
+                <var name="UserNameColor" value="$Color" scope="userColor"/>
+                <output value="El $Color es feo"/> <!-- Using the placeholder in output -->
+            </input>
+      </context>
+    </input>
 
 
 
