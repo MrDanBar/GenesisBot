@@ -22,7 +22,7 @@
     <input pattern="(hola) *">
   <output value="Hola! Cual es tu color favorito?"/>
 
-  <context>
+  <context  modal="true">
     <sample>
       <item>Verde</item>
       <item>Azul</item>
