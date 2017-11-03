@@ -20,16 +20,24 @@
     </input>
     
     <input pattern="(hola) *">
-  <output value="Hi! What is your favorite color?"/>
+  <output value="Hola! Cual es tu color favorito?"/>
 
   <context>
     <sample>
-      <item>Green</item>
-      <item>Blue</item>
-      <item>Red</item>
+      <item>Verde</item>
+      <item>Azul</item>
+      <item>Rojo</item>
     </sample>
-    <input pattern="*">
-      <output value="Nice! I like it too!"/>
+    <input pattern="Rojo">
+      <output value="Rojo!!! ohhh.. yo le voy a los cremas/>
+        <output value="Cool"/>
+        <output value="Eres Moltres?"/>
+    </input>
+      <input pattern="Azul">
+      <output value="Nice!"/>
+    </input>
+      <input pattern="Verde">
+      <output value="Eres un iluminado?"/>
     </input>
   </context>
 </input>
