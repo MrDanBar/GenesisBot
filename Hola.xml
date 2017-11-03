@@ -22,18 +22,17 @@
     <input pattern="(hola) *">
       <output value="Hola! Cúal es tu color favorito?"/>
 
-      <context modal="true">
-        <sample>
-          <item>Green</item>
-          <item>Blue</item>
-          <item>Yellow</item>
-        </sample>
-        <input pattern="$Color">
-          <var name="UserColor" value="$Color" scope="usercolores"/>
-          <output value="Esta bien! El mio no! ¬¬"/>
-        </input>
-      </context>
-    </input>
+  <context>
+    <input pattern="* $Color"/>
+    <sample>
+      <item>Green</item>
+      <item>Blue</item>
+      <item>Red</item>
+    </sample>
+  </context>
+</input>
+
+
 
 
 </context>
