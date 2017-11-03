@@ -19,22 +19,20 @@
         </context>
     </input>
     
-    <input pattern="(hola) *">
-      <context if="empty($Color)" modal="true">
-        <output value="Hola! Cúal es tu color favorito?"/>
-          
-         <sample>
-          <item>Green</item>
-          <item>Blue</item>
-          <item>Red</item>
-        </sample>
-        <input pattern="$Color"/>
-        <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
-                <var name="UserNameColor" value="$Color" scope="userColor"/>
-                <output value="El $Color es feo"/> <!-- Using the placeholder in output -->
-            </input>
-      </context>
+    <input pattern="(hi|hello) *">
+  <output value="Hi! What is your favorite color?"/>
+
+  <context>
+    <sample>
+      <item>Green</item>
+      <item>Blue</item>
+      <item>Red</item>
+    </sample>
+    <input pattern="*">
+      <output value="Nice! I like it too!"/>
     </input>
+  </context>
+</input>
 
 
 
