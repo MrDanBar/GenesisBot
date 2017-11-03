@@ -24,9 +24,9 @@
 
       <context>
         <sample>
-          <item>VERDE</item>
-          <item>AZUL</item>
-          <item>ROJO</item>
+          <item>Green</item>
+          <item>Blue</item>
+          <item>Yellow</item>
         </sample>
         <input pattern="* $Color">
           <output value="Esta bien! El mio no! ¬¬"/>
