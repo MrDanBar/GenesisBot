@@ -29,7 +29,7 @@
       <item>Rojo</item>
     </sample>
     <input pattern="Rojo">
-      <output value="Rojo!!! ohhh.. yo le voy a los cremas/>
+      <output value="Rojo!!! ohhh.. yo le voy a los cremas"/>
         <output value="Cool"/>
         <output value="Eres Moltres?"/>
     </input>
