@@ -28,7 +28,7 @@
           <item>AZUL</item>
           <item>ROJO</item>
         </sample>
-        <input pattern="* $Color *">
+        <input pattern="* $Color">
           <output value="Esta bien! El mio no! ¬¬"/>
         </input>
       </context>
