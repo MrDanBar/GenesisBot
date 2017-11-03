@@ -43,9 +43,9 @@
 </input>
     
     <input pattern="(cual es la mejor empresa) *">
-  <output value="Hi! What is your favorite color?"/>
+  <output value="No se, a ver.. dime"/>
 
-  <context>
+  <context  modal="true">
     <sample>
       <item>Genesis</item>
       <item>Genesis</item>
