@@ -23,7 +23,7 @@
 	</input>
 	
 	<input pattern="(no puedo entrar al sistema|no me deja entrar al sistema) *">
-		<output value="¿A que sistema no puedes ingresar?*-*1. BYTE*-*2. ZONA DE CONOCIMIENTO*-*3. CORREO "/>
+		<output value="¿A que sistema no puedes ingresar?-*1. BYTE-*2. ZONA DE CONOCIMIENTO-*3. CORREO "/>
 
 		<context  modal="true">
 			<sample>
